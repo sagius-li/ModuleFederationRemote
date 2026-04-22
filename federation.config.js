@@ -8,6 +8,7 @@ module.exports = withNativeFederation({
 
   exposes: {
     "./RemoteApp": "./src/app/app.component.ts",
+    "./RemotePage": "./src/app/page/page.component.ts",
   },
 
   shared: {
