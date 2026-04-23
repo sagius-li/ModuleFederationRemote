@@ -13,4 +13,10 @@ export class RemoteUtilsService {
     public brandMessage(state: { message: string }): void {
         state.message = `RemoteUtilsService: ${state.message}`;
     }
+
+    public brandTitle(com: any): void {
+        if (com && com.title) {
+            com.setTitle(`RemoteUtilsService: ${com.title}`);
+        }
+    }
 }
