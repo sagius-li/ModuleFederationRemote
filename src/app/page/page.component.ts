@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { RemoteUtilsService } from '../../services/remote-utils.service';
 
 @Component({
   selector: 'app-page',
@@ -6,6 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: './page.component.html',
   styleUrl: './page.component.css'
 })
-export class PageComponent {
+export class PageComponent implements OnInit {
+  constructor(private remoteUtilsService: RemoteUtilsService) { }
 
+  ngOnInit(): void {
+    this.remoteUtilsService.log('PageComponent initialized');
+  }
 }
