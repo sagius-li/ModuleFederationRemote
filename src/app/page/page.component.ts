@@ -4,8 +4,8 @@ import { RemoteUtilsService } from '../../services/remote-utils.service';
 
 @Component({
   selector: 'app-page',
-  imports: [],
   templateUrl: './page.component.html',
+  standalone: true,
   styleUrl: './page.component.css'
 })
 export class PageComponent implements OnInit {

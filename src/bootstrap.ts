@@ -1,7 +1,10 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from './app/app.module';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { provideRouter } from '@angular/router';
 
-platformBrowserDynamic().bootstrapModule(AppModule, {
-  ngZoneEventCoalescing: true,
+import { AppComponent } from './app/app.component';
+import { REMOTE_CHILD_ROUTES } from './app/remote-child.routes';
+
+bootstrapApplication(AppComponent, {
+  providers: [provideRouter(REMOTE_CHILD_ROUTES)]
 })
   .catch(err => console.error(err));

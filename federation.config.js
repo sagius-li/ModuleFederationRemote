@@ -7,8 +7,8 @@ module.exports = withNativeFederation({
   name: "remote",
 
   exposes: {
-    "./RemoteApp": "./src/app/app.component.ts",
-    "./RemotePage": "./src/app/page/page.component.ts",
+    "./RemoteRoutes": "./src/app/remote.routes.ts",
+    "./RemoteWidget": "./src/app/widget/widget.component.ts",
     "./RemoteUtilsService": "./src/services/remote-utils.service.ts",
   },
 
