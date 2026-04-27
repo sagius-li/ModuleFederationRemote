@@ -1,5 +1,7 @@
 import { Injectable } from "@angular/core";
 
+import { TitleBarComponent } from "mf-shared-core";
+
 @Injectable({
     providedIn: 'root',
 })
@@ -14,7 +16,7 @@ export class RemoteUtilsService {
         state.message = `RemoteUtilsService: ${state.message}`;
     }
 
-    public brandTitle(com: any): void {
+    public brandTitle(com: TitleBarComponent): void {
         if (com && com.title) {
             com.setTitle(`RemoteUtilsService: ${com.title}`);
         }

@@ -18,6 +18,12 @@ module.exports = withNativeFederation({
       strictVersion: true,
       requiredVersion: "auto",
     }),
+
+    "mf-shared-core": {
+      singleton: true,
+      strictVersion: true,
+      requiredVersion: "auto",
+    },
   },
 
   skip: [
